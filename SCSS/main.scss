@@ -1,0 +1,479 @@
+// hsl - hue, saturation and lightness
+
+// Colors
+
+$Pink: hsl(322, 100%, 66%);
+
+$VeryPaleCyan: hsl(193, 100%, 96%);
+
+$VeryDarkCyan: hsl(192, 100%, 9%);
+
+$GrayishBlue: hsl(208, 11%, 55%);
+
+$HeadingsFontFamily:'Poppins',sans-serif;
+
+$ButtonsBodyFontFamily:'Open Sans',sans-serif;
+
+// Universal Effects
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $ButtonsBodyFontFamily;
+    overflow-x: hidden;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+button{
+    font-family: $ButtonsBodyFontFamily;
+}
+
+header{
+    background: url(../images/bg-hero-desktop.svg);
+    background-position: center;
+
+    // If we use background-size: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+    background-size: cover;
+
+    background-color: $VeryPaleCyan;
+
+    nav{
+        padding: 1rem;
+
+        .left-logo{
+            img{
+                width: 150px;
+            }
+        }
+
+        .button{
+            .btn{
+                background-color: white;
+                color: $VeryDarkCyan;
+
+                // border:size style color
+                border: 1px solid white;
+
+                margin-top:1rem;
+                border-radius: 25px;
+                width: 200px;
+                font-weight: 700;
+
+                &:hover{
+                    color: $GrayishBlue;
+                }
+            }
+        }
+    }
+
+    .left-col{
+        margin-top: 10rem;
+
+        h3 {
+            color: $VeryDarkCyan;
+            font-family: $HeadingsFontFamily;
+            font-weight: 600;
+        }
+
+        p {
+            color: $GrayishBlue;
+            margin-top: 3rem;
+        }
+
+        .button {
+            .btn {
+                background-color: $Pink;
+                color: whitesmoke;
+                border-radius: 20px;
+                width: 230px;
+
+                &:hover {
+                    color: $GrayishBlue;
+                }
+            }
+        }
+    }
+}
+
+.column-one{
+
+    // border:size style color
+    border: 3px solid whitesmoke;
+
+    border-radius: 12px;
+
+    // margin: top & bottom left & right
+    margin: 1rem auto;
+
+    .text{
+
+        margin-top: 9rem;
+
+        h4 {
+            color: $VeryDarkCyan;
+            font-family: $HeadingsFontFamily;
+            font-weight: 600;
+        }
+
+        p {
+            color: $GrayishBlue;
+            font-size: 18px;
+        }
+
+    }
+}
+
+// 2
+.column-two{
+
+    // border:size style color
+    border: 3px solid whitesmoke;
+
+    border-radius: 12px;
+
+    // margin: top & bottom left & right
+    margin: 1rem auto;
+
+    .content{
+
+        margin-top: 9rem;
+
+        h4 {
+            color: $VeryDarkCyan;
+            font-family: $HeadingsFontFamily;
+            font-weight: 600;
+        }
+
+        p {
+            color: $GrayishBlue;
+            font-size: 16px;
+        }
+
+    }
+}
+
+// 3
+.column-three {
+
+    // border:size style color
+    border: 3px solid whitesmoke;
+
+    border-radius: 12px;
+
+    // margin: top & bottom left & right
+    margin: 1rem auto;
+
+    .textt{
+
+        margin-top: 9rem;
+
+        h4 {
+            color: $VeryDarkCyan;
+            font-family: $HeadingsFontFamily;
+            font-weight: 600;
+        }
+
+        p {
+            color: $GrayishBlue;
+            font-size: 16px;
+        }
+
+    }
+}
+
+// 4
+.column-four{
+
+    width: 700px;
+    height: 30vh;
+    padding: 5rem;
+
+    /* position: relative, it’ll remain “in the flow” of the layout but you can move it around! */
+    position: relative;
+
+    top: 50px;
+    left: 350px;
+
+    // border:size style color
+    border: 3px solid whitesmoke;
+
+    border-radius: 12px;
+
+    h3{
+        color: $VeryDarkCyan;
+        font-family: $HeadingsFontFamily;
+        font-weight: 600;
+    }
+
+    .button {
+
+        .btn {
+            background-color: $Pink;
+            color: whitesmoke;
+            border-radius: 20px;
+            width: 230px;
+
+            &:hover {
+                color: $GrayishBlue;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $VeryDarkCyan;
+    color: $GrayishBlue;
+    padding:0.9rem;
+
+    .logo{
+
+        img{
+            width: 150px;
+        }
+
+    }
+
+    .address{
+        .text{
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .footer-links{
+        a{
+            color: $GrayishBlue;
+
+            // Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+            display: block;
+
+            text-align: center;
+            margin: 3.1rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .social-media-icons{
+
+        .fa-facebook,
+        .fa-twitter,
+        .fa-instagram{
+            font-size: 1.7rem;
+            margin-top: 10rem;
+            margin-right: 0.4rem;
+
+            // border:size style color
+            border: 2px solid whitesmoke;
+
+            border-radius: 25px;
+            padding: 0.3rem;
+            cursor: pointer;
+        } 
+    }
+
+    .footer-text{
+        font-size: 0.9rem;
+        margin-top: 3rem;
+    }
+}
+
+
+// Media Queries
+// On XS Screens
+@media only screen and (max-width:600px){
+
+    header{
+        background: url(../images/bg-hero-mobile.svg);
+        background-position: center;
+
+        // If we use background-size: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+        background-size: cover;
+
+        background-color: $VeryPaleCyan;
+
+        nav{
+            padding: 0.3rem;
+
+            .left-logo{
+                img{
+                    width: 130px;
+                }
+            }
+
+            .button{
+                .btn{
+                    width: 110px;
+                    margin-bottom: 1rem;
+                    border-radius: 25px;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        .left-col{
+            margin-top: 0.5rem;
+            text-align: center;
+
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .column-one{
+
+        // margin: top & bottom left & right
+        margin: 15px 10px;
+
+        // border:size style color
+        border: 3px solid whitesmoke;
+
+        width: 350px;
+
+        .text{
+            margin-top: 1rem;
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+        img{
+            width: 350px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .column-two{
+
+        // margin: top & bottom left & right
+        margin: 15px 10px;
+
+        // border:size style color
+        border: 3px solid whitesmoke;
+
+        width: 350px;
+
+        .content{
+            margin-top: 1rem;
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+        img{
+            width: 350px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .column-three{
+
+        // margin: top & bottom left & right
+        margin: 15px 10px;
+
+        // border:size style color
+        border: 3px solid whitesmoke;
+
+        width: 350px;
+
+        .textt{
+            margin-top: 1rem;
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        img {
+            width: 350px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    // 4
+    .column-four {
+
+        width: 300px;
+        height: 20vh;
+        padding: 3rem;
+
+        /* position: relative, it’ll remain “in the flow” of the layout but you can move it around! */
+        position: relative;
+
+        top: 40px;
+        left: 35px;
+
+        // border:size style color
+        border: 3px solid whitesmoke;
+
+        border-radius: 12px;
+
+        h3 {
+            color: $VeryDarkCyan;
+            font-family: $HeadingsFontFamily;
+            font-weight: 600;
+            font-size: 11px;
+        }
+
+        .button {
+
+            .btn {
+                background-color: $Pink;
+                color: whitesmoke;
+                border-radius: 20px;
+                width: 200px;
+
+                &:hover {
+                    color: $GrayishBlue;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer-links{
+            a{
+                text-align: left;
+                margin-left: 0;
+                margin-top: 0.2rem;
+                margin-bottom: 0.1rem;
+            }
+        }
+
+        .social-media-icons{
+            margin-left: 7rem;
+
+            .fa-facebook,
+            .fa-twitter,
+            .fa-instagram {
+                font-size: 1.7rem;
+                margin-top: 1rem;
+                margin-right: 0.4rem;
+
+                // border:size style color
+                border: 2px solid whitesmoke;
+                
+                border-radius: 25px;
+                padding: 0.3rem;
+                cursor: pointer;
+            }
+        }
+
+        .footer-text{
+            margin-top: 1rem;
+        }
+    }
+}

@@ -1,0 +1,332 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background: url(../images/bg-hero-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-color: #ebfbff;
+}
+
+header nav {
+  padding: 1rem;
+}
+
+header nav .left-logo img {
+  width: 150px;
+}
+
+header nav .button .btn {
+  background-color: white;
+  color: #00252e;
+  border: 1px solid white;
+  margin-top: 1rem;
+  border-radius: 25px;
+  width: 200px;
+  font-weight: 700;
+}
+
+header nav .button .btn:hover {
+  color: #808d99;
+}
+
+header .left-col {
+  margin-top: 10rem;
+}
+
+header .left-col h3 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+header .left-col p {
+  color: #808d99;
+  margin-top: 3rem;
+}
+
+header .left-col .button .btn {
+  background-color: #ff52bf;
+  color: whitesmoke;
+  border-radius: 20px;
+  width: 230px;
+}
+
+header .left-col .button .btn:hover {
+  color: #808d99;
+}
+
+.column-one {
+  border: 3px solid whitesmoke;
+  border-radius: 12px;
+  margin: 1rem auto;
+}
+
+.column-one .text {
+  margin-top: 9rem;
+}
+
+.column-one .text h4 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.column-one .text p {
+  color: #808d99;
+  font-size: 18px;
+}
+
+.column-two {
+  border: 3px solid whitesmoke;
+  border-radius: 12px;
+  margin: 1rem auto;
+}
+
+.column-two .content {
+  margin-top: 9rem;
+}
+
+.column-two .content h4 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.column-two .content p {
+  color: #808d99;
+  font-size: 16px;
+}
+
+.column-three {
+  border: 3px solid whitesmoke;
+  border-radius: 12px;
+  margin: 1rem auto;
+}
+
+.column-three .textt {
+  margin-top: 9rem;
+}
+
+.column-three .textt h4 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.column-three .textt p {
+  color: #808d99;
+  font-size: 16px;
+}
+
+.column-four {
+  width: 700px;
+  height: 30vh;
+  padding: 5rem;
+  /* position: relative, it’ll remain “in the flow” of the layout but you can move it around! */
+  position: relative;
+  top: 50px;
+  left: 350px;
+  border: 3px solid whitesmoke;
+  border-radius: 12px;
+}
+
+.column-four h3 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.column-four .button .btn {
+  background-color: #ff52bf;
+  color: whitesmoke;
+  border-radius: 20px;
+  width: 230px;
+}
+
+.column-four .button .btn:hover {
+  color: #808d99;
+}
+
+footer {
+  background-color: #00252e;
+  color: #808d99;
+  padding: 0.9rem;
+}
+
+footer .logo img {
+  width: 150px;
+}
+
+footer .address .text p {
+  font-size: 0.8rem;
+}
+
+footer .footer-links a {
+  color: #808d99;
+  display: block;
+  text-align: center;
+  margin: 3.1rem;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media-icons .fa-facebook,
+footer .social-media-icons .fa-twitter,
+footer .social-media-icons .fa-instagram {
+  font-size: 1.7rem;
+  margin-top: 10rem;
+  margin-right: 0.4rem;
+  border: 2px solid whitesmoke;
+  border-radius: 25px;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+footer .footer-text {
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background: url(../images/bg-hero-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-color: #ebfbff;
+  }
+  header nav {
+    padding: 0.3rem;
+  }
+  header nav .left-logo img {
+    width: 130px;
+  }
+  header nav .button .btn {
+    width: 110px;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    padding: 1rem;
+  }
+  header .left-col {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  header .left-col p {
+    margin-top: 1rem;
+  }
+  .column-one {
+    margin: 15px 10px;
+    border: 3px solid whitesmoke;
+    width: 350px;
+  }
+  .column-one .text {
+    margin-top: 1rem;
+  }
+  .column-one .text p {
+    font-size: 0.8rem;
+  }
+  .column-one img {
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .column-two {
+    margin: 15px 10px;
+    border: 3px solid whitesmoke;
+    width: 350px;
+  }
+  .column-two .content {
+    margin-top: 1rem;
+  }
+  .column-two .content p {
+    font-size: 0.8rem;
+  }
+  .column-two img {
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .column-three {
+    margin: 15px 10px;
+    border: 3px solid whitesmoke;
+    width: 350px;
+  }
+  .column-three .textt {
+    margin-top: 1rem;
+  }
+  .column-three .textt p {
+    font-size: 0.8rem;
+  }
+  .column-three img {
+    width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .column-four {
+    width: 300px;
+    height: 20vh;
+    padding: 3rem;
+    /* position: relative, it’ll remain “in the flow” of the layout but you can move it around! */
+    position: relative;
+    top: 40px;
+    left: 35px;
+    border: 3px solid whitesmoke;
+    border-radius: 12px;
+  }
+  .column-four h3 {
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .column-four .button .btn {
+    background-color: #ff52bf;
+    color: whitesmoke;
+    border-radius: 20px;
+    width: 200px;
+  }
+  .column-four .button .btn:hover {
+    color: #808d99;
+  }
+  footer .footer-links a {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+  }
+  footer .social-media-icons {
+    margin-left: 7rem;
+  }
+  footer .social-media-icons .fa-facebook,
+  footer .social-media-icons .fa-twitter,
+  footer .social-media-icons .fa-instagram {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-right: 0.4rem;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    padding: 0.3rem;
+    cursor: pointer;
+  }
+  footer .footer-text {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
